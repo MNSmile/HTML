@@ -25,8 +25,12 @@ body {
 	text-align: center;
 }
 #globallink ul li a{
-	padding: 9px 6px 11px 6px;
+	/* 
+	 * 超链接是行级标签，不能设置宽度高和margin，
+	 * display：block；将行级元素变为块级元素
+	 */
 	display: block;
+	padding: 9px 6px 11px 6px;
 	background: url(../images/button1.jpg) no-repeat;
 }
 #globallink li a:link,
@@ -76,10 +80,10 @@ body {
 	margin: 0px 0px 5px 0px;
 }
 #today ul {
-	list-style-type: none;
+	list-style-type: none; //设置列表格式,去掉前面的小黑点
 }
 #today ul li {
-	text-align: center;
+	text-align: center; 
 }
 #today ul li img {
 	border: 1px solid #ffffff;
