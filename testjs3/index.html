@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/check.js"></script>		
+	</head>
+	<body>
+		<form action="login.html" method="post" id="form1">
+			<table> 
+				<tr>
+					<td>账号：</td>
+					<td>
+						<input type="text" name="account" id="account" onblur="checkAccount();"/>
+					</td>
+					<td>
+						<label id="accountText"></label>						
+					</td>
+				</tr>
+				<tr>
+					<td>姓名：</td>
+					<td>
+						<input type="text" name="name" id="name" onblur="checkName();" />
+					</td>
+					<td>
+						<label id="nameText"></label>
+					</td>
+				</tr>
+				<tr>
+					<td>密码：</td>
+					<td>
+						<input type="password" name="pwd" id="pwd" onblur="checkPwd();" />
+					</td>
+					<td>
+						<label id="pwdText"></label>
+					</td>
+				</tr>
+				<tr>
+					<td>确认密码：</td>
+					<td>
+						<input type="password" name="pwd2" id="pwd2" onblur="checkPwd2();" />
+					</td>
+					<td>
+						<label id="pwd2Text"></label>
+					</td>
+				</tr>
+				<tr>
+					<td>email：</td>
+					<td>
+						<input type="email" name="email" id="email" onblur="checkEmail();" />
+					</td>					
+					<td>
+						<label id="emailText"></label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<input type="button" value="注册" onclick="checkSubmit();" />
+						<input type="reset" value="重置"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
